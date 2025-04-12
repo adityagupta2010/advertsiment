@@ -11,109 +11,100 @@
   <!-- Hero Section -->
   <section class="text-center p-10 bg-gradient-to-r from-pink-300 to-pink-500 text-white">
     <h1 class="text-5xl font-bold mb-4">GlowUp Cosmetics</h1>
-    <p class="text-xl">🌿 Nature-Focused <br> Tag
-"Where pure ingredients meet your purest glow."</p>
+    <p class="text-xl">🌿 Nature-Focused <br> "Where pure ingredients meet your purest glow."</p>
+  </section>
+
+  <!-- Search Section -->
+  <section class="text-center p-6 bg-pink-100">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search for products..." 
+      class="w-full max-w-md px-4 py-2 rounded-full shadow focus:outline-none focus:ring-2 focus:ring-pink-400"
+      onkeyup="filterProducts()"
+    />
   </section>
 
   <!-- Features Section -->
-  <section class="grid md:grid-cols-3 gap-6 p-10 bg-white">
+  <section id="productGrid" class="grid md:grid-cols-3 gap-6 p-10 bg-white">
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="face wash.jpg" class="mx-auto mb-4" />
-      <h2 class="text-2xl font-bold mb-2"> Radiance by forever – Face Wash</h2>
-      <p>💬 "Wake up your skin with nature's touch."
-🌿 With Aloe, Licorice, and Bamboo, this face wash gently cleanses while restoring your natural glow.
-
-</p>
+      <h2 class="text-2xl font-bold mb-2">Radiance by Forever – Face Wash</h2>
+      <p>💬 "Wake up your skin with nature's touch." 🌿 With Aloe, Licorice, and Bamboo, this face wash gently cleanses while restoring your natural glow.</p>
     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="aloevera jelly.webp" class="mx-auto mb-4" />
       <h2 class="text-2xl font-bold mb-2">🍃 Aloe Vera Gelly</h2>
-      <p>💬 "Pure Aloe. Pure Relief."
-💧 Soothe, hydrate, and heal with this cooling gel. Perfect for sunburns, irritation, or just everyday skin love.
-
-</p>
+      <p>💬 "Pure Aloe. Pure Relief." 💧 Soothe, hydrate, and heal with this cooling gel. Perfect for sunburns, irritation, or just everyday skin love.</p>
     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="lipbam.jpg" class="mx-auto mb-4" />
       <h2 class="text-2xl font-bold mb-2">💋 Forever Aloe Lips with Jojoba</h2>
-      <p>💬 "Soft lips, forever kissed by nature."
-💄 Aloe + Jojoba = the ultimate lip therapy. Smooth, soothe, and smile all day long.</p>
+      <p>💬 "Soft lips, forever kissed by nature." 💄 Aloe + Jojoba = the ultimate lip therapy. Smooth, soothe, and smile all day long.</p>
     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="perfume.jpg" class="mx-auto mb-4" />
-      <h2 class="text-2xl font-bold mb-2">💨 Desire by Forever – Deodorant(for mens)</h2>
-      <p>💬 "Discover Your Essence of Success."
-✨ A fragrance that speaks confidence, strength, and undeniable charm. Infused with Aloe Vera for a fresh and lasting impression.
-
-.</p>
+      <h2 class="text-2xl font-bold mb-2">💨 Desire by Forever – Deodorant (FOR MEN)</h2>
+      <p>💬 "Discover Your Essence of Success." ✨ A fragrance that speaks confidence, strength, and undeniable charm. Infused with Aloe Vera for a fresh and lasting impression.</p>
     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="scrub.jpg" class="mx-auto mb-4" />
       <h2 class="text-2xl font-bold mb-2">🌿 Forever Aloe Scrub</h2>
-      <p>💬 "Polish your glow with nature’s finest."
-🌱 Gentle exfoliation with natural Jojoba beads — removes impurities and reveals radiant skin, the natural way.
-
-.</p>
+      <p>💬 "Polish your glow with nature’s finest." 🌱 Gentle exfoliation with natural Jojoba beads — removes impurities and reveals radiant skin, the natural way.</p>
     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="chocolate.jpeg" class="mx-auto mb-4" />
       <h2 class="text-2xl font-bold mb-2">Forever FastBreak – Protein Energy Bar</h2>
-      <p>💬 "Snack strong. Fuel fast. Feel unstoppable."
-🥜 Packed with protein, vitamins, and that perfect peanut-buttery satisfaction — your guilt-free power snack on the go.
-
-</p>
+      <p>💬 "Snack strong. Fuel fast. Feel unstoppable." 🥜 Packed with protein, vitamins, and that perfect peanut-buttery satisfaction — your guilt-free power snack on the go.</p>
     </div>
-     <div class="text-center p-6 shadow-lg rounded-lg">
+
+    <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="cough pills.jpg" class="mx-auto mb-4" />
       <h2 class="text-2xl font-bold mb-2">🌿 Forever Cough Pills</h2>
-      <p>💬 "Soothe your throat, the natural way."
-🍃 Herbal relief in every pill — gentle on the throat, tough on the cough.
-.</p>
+      <p>💬 "Soothe your throat, the natural way." 🍃 Herbal relief in every pill — gentle on the throat, tough on the cough.</p>
     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="honey.jpg" class="mx-auto mb-4" />
-      <h2 class="text-2xl font-bold mb-2"> forever Tulsi Van Honey – Herbal Honey</h2>
-      <p>💬 "Nature’s golden touch, infused with Tulsi calm."
-🍯 A sweet, soothing fusion of pure honey and holy basil — for immunity, clarity, and everyday vitality.
-.</p>
+      <h2 class="text-2xl font-bold mb-2">Forever Tulsi Van Honey – Herbal Honey</h2>
+      <p>💬 "Nature’s golden touch, infused with Tulsi calm." 🍯 A sweet, soothing fusion of pure honey and holy basil — for immunity, clarity, and everyday vitality.</p>
     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="perfume women.jpg" class="mx-auto mb-4" />
-      <h2 class="text-2xl font-bold mb-2"> 💖 Dream by Forever – Spray Deodorant (For Women)</h2>
-      <p>💬 "Smell like a dream. Move like a queen."
-🌸 A delicate, long-lasting fragrance crafted for confidence, grace, and all-day freshness.
-
-.</p>
+      <h2 class="text-2xl font-bold mb-2">💖 Dream by Forever – Spray Deodorant (For Women)</h2>
+      <p>💬 "Smell like a dream. Move like a queen." 🌸 A delicate, long-lasting fragrance crafted for confidence, grace, and all-day freshness.</p>
     </div>
-     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="tooth paste.webp" class="mx-auto mb-4" />
-      <h2 class="text-2xl font-bold mb-2">  Forever Bright Toothgel</h2>
-      <p>💬 "Brighten your smile, naturally."
-🦷 Fluoride-free and Aloe-rich — for a clean, fresh, healthy smile every day.
-.</p>
+      <h2 class="text-2xl font-bold mb-2">Forever Bright Toothgel</h2>
+      <p>💬 "Brighten your smile, naturally." 🦷 Fluoride-free and Aloe-rich — for a clean, fresh, healthy smile every day.</p>
     </div>
+
     <div class="text-center p-6 shadow-lg rounded-lg">
       <img src="sanitizer.jpg" class="mx-auto mb-4" />
-      <h2 class="text-2xl font-bold mb-2"> Forever Hand Sanitizer</h2>
-      <p>💬 "Clean hands. Gentle feel. Forever protected."
-🧴 Kills 99.9% of germs with soothing Aloe and a hint of refreshing scent — safety you’ll actually enjoy using.
-
-
-.</p>
+      <h2 class="text-2xl font-bold mb-2">Forever Hand Sanitizer</h2>
+      <p>💬 "Clean hands. Gentle feel. Forever protected." 🧴 Kills 99.9% of germs with soothing Aloe and a hint of refreshing scent — safety you’ll actually enjoy using.</p>
     </div>
+
   </section>
 
- 
   <!-- Contact Info Section -->
   <section id="contact" class="p-10 bg-white text-center">
     <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
     <p class="mb-4 text-gray-600">Feel free to reach out for collaborations, inquiries, or just to say hi!</p>
-    
+
     <div class="inline-block bg-pink-50 p-6 rounded-lg shadow-md text-left max-w-md mx-auto">
       <p class="mb-2"><strong>Name:</strong> Neha Gupta</p>
       <p class="mb-2"><strong>Email:</strong> <a href="mailto:youremail@example.com" class="text-pink-600 hover:underline">youremail@example.com</a></p>
-      <p class="mb-2"><strong>Phone:</strong> 91+ 9024228342</p>
+      <p class="mb-2"><strong>Phone:</strong> +91 9024228342</p>
       <p class="mb-2"><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" class="text-pink-600 hover:underline">@yourhandle</a></p>
     </div>
   </section>
@@ -122,6 +113,19 @@
   <footer class="text-center p-6 bg-white text-sm text-gray-500">
     &copy; 2025 GlowUp Cosmetics. All rights reserved.
   </footer>
+
+  <!-- Search Filter Script -->
+  <script>
+    function filterProducts() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const products = document.querySelectorAll("#productGrid > div");
+
+      products.forEach(product => {
+        const text = product.textContent.toLowerCase();
+        product.style.display = text.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
 
 </body>
 </html>
